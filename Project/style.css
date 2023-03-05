@@ -1,0 +1,181 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #BA0C2F;
+	padding: 10px;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.landing {
+	background-image: url('https://source.unsplash.com/1600x900/?university');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.landing h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+}
+
+.landing p {
+	font-size: 1.2rem;
+	margin-bottom: 40px;
+}
+
+.btn {
+	background-color: #BA0C2F;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.features {
+	padding: 50px 0;
+	text-align: center;
+}
+
+.features h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.features ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.features li {
+	margin: 0 20px;
+	font-size: 1.2rem;
+	text-align: center;
+	flex-basis: 300px;
+	margin-bottom: 20px;
+}
+
+.features i {
+	margin-right: 10px;
+	font-size:
+}
+
+/* other */
+
+footer {
+	background-color: #9cb5d6;
+	padding: 50px 0;
+}
+
+footer h3 {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+footer p {
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 20px;
+    text-align: center;
+}
+
+.social-icons {
+	list-style: none;
+	display: flex;
+	margin: 0 -5px;
+    
+}
+
+.social-icons li {
+	margin: 0 5px;
+}
+
+.social-icons a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #666;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+	background-color: #333;
+}
+
+.footer-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-links li {
+	margin-bottom: 10px;
+}
+
+.footer-links a {
+	color: #666;
+	text-decoration: none;
+}
+
+.footer-links a:hover {
+	color: #333;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#r1{
+	margin: 0px 0px 0px 600px;
+	
+}
+#r2{
+	margin: 20px 0px 0px 135px;
+
+}
+#r3{
+	margin: 50px 1020px 0px 0px ;
+}
+#r4{
+	margin: 50px 0px 0px 0px ;
+
+}
+#r5{
+	margin: 0px 0px 0px 0px ;
+}
