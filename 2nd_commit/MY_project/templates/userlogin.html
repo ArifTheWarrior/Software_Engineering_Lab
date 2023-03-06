@@ -1,0 +1,52 @@
+<form action="/club_community/userLogin/" method="post">
+
+    {% csrf_token %}
+   <label for="id">ID:</label>
+    <input id="id" type="text" name="id" value="{{current_id}}" required>
+ 
+    <label for="name">Student Name:</label>
+    <input id="name" type="text" name="name" value="{{current_name}}" maxlength="255" required>
+ 
+    <label for="email">Email:</label>
+    <input id="email" type="text" name="email" value="{{current_email}}" maxlength="255" required>
+ 
+ 
+    <label for="contact">Contact:</label>
+    <input id="contact" type="text" name="contact" value="{{current_threat_contact}}" maxlength="255" required>
+ 
+    <label for="password">Password:</label>
+    <input id="password" type="text" name="password" value="{{current_password}}" maxlength="255" required>
+
+    <label for="user_type">Usert Type:</label>
+    <input id="user_type" type="text" name="user_type" value="{{current_user_type}}" maxlength="255">
+
+
+    <label for="school_division">School Division:</label>
+    <input id="school_division" type="text" name="school_division" value="{{current_school_division}}" maxlength="255">
+
+
+    <label for="status">Status:</label>
+    <input id="status" type="text" name="status" value="{{current_staus}}">
+
+
+    <label for="cgpa">CGPA:</label>
+    <input id="cgpa" type="text" name="cgpa" value="{{current_cgpa}}" maxlength="255">
+
+
+    <label for="official_id">Official ID:</label>
+    <input id="official_id" type="text" name="official_id" value="{{current_official_id}}" maxlength="20">
+
+
+    <label for="designation">Designation:</label>
+    <input id="designation" type="text" name="designation" value="{{current_designation}}" maxlength="255">
+
+
+    <label for="subscription">Subscription:</label>
+    <input id="subscription" type="text" name="subscription" value="{{current_subscription}}">
+
+
+    <label for="created_id">Created ID:</label>
+    <input id="created_id" type="text" name="created_id" value="{{current_created_id}}">
+
+    <input type="submit" value="ok">
+ </form>
