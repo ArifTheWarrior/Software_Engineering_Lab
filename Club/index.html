@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>UIU-Club</title>
+
+	<style>
+		body {
+			background-image: url("picture/BG.jpg");
+			background-size: cover;
+			background-position: center;
+		}
+
+		.card {
+			display: inline-block;
+			background-color: lightcyan;
+			background-image: url("picture/BG.jpg");
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			width: 200px;
+			margin: 10px;
+			text-align: center;
+			font-family: arial;
+			padding: 20px;
+
+		}
+
+		.title {
+			color: grey;
+			font-size: 18px;
+		}
+
+		.link {
+			color: rgb(8, 0, 255);
+			font-size: 22px;
+			text-decoration: solid;
+			margin-top: 10px;
+		}
+
+		.link:hover {
+			color: #005580;
+		}
+
+		.card img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+			margin: auto;
+		}
+
+		/* Navbar_code */
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: row;
+			height: 100vh;
+		}
+
+		.navbar {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			background-color: lightblue;
+			color: #fff;
+			width: 250px;
+			height: 100%;
+			padding: 20px 0;
+		}
+
+		.logo {
+			font-size: 30px;
+			font-weight: bold;
+			margin-bottom: 40px;
+		}
+
+
+		.menu {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 110px;
+		}
+
+		.menu-item {
+			margin-bottom: 40px;
+			text-align: center;
+			width: 200px;
+			padding: 10px;
+			border-radius: 5px;
+			transition: background-color 0.3s ease-in-out;
+		}
+
+		.menu-item:hover {
+			background-color: orange;
+		}
+
+		.menu-item a {
+			color: #005580;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.active {
+			background-color: orange;
+		}
+
+		.content {
+			flex: 1;
+			padding: 20px;
+		}
+
+		h1 {
+			font-size: 40px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+		<nav class="navbar">
+			<div class="logo"><img src="./picture/uiu.png" alt="" style="height: 70px;">
+				<hr style="color: orange; ">
+			</div>
+			<div class="menu">
+				<div class="menu-item"><a href="#">Home</a></div>
+				<div class="menu-item"><a href="#">Profile</a></div>
+				<div class="menu-item"><a href="#">CGPA Cal.</a></div>
+				<div class="menu-item active"><a href="#">Club</a></div>
+				<div class="menu-item"><a href="#">E-Book</a></div>
+			</div>
+		</nav>
+		<div class="content">
+
+			<div class="card">
+				<img src="./picture/Robotics.png" style="height: 150px; width: 200px;" alt="Robotics Club">
+				<h2 class="title">Robotics Club</h2>
+				<a class="link" href="https://www.facebook.com/uiurobotics/">Visit Robotics Club</a>
+			</div>
+
+			<div class="card">
+				<img src="./picture/Cultural.png" style="height: 150px; width: 200px;" alt="Cultural Club">
+				<h2 class="title">Cultural Club</h2>
+				<a class="link" href="https://www.facebook.com/UIU.Cultural.club.uiucc/">Visit Cultural Club</a>
+			</div>
+
+			<div class="card">
+				<img src="./picture/CISCO.jpg" style="height: 150px; width: 200px;" alt="CISCO">
+				<h2 class="title">CISCO</h2>
+				<a class="link" href="http://cisco.uiu.ac.bd/">Visit CISCO</a>
+			</div>
+
+			<div class="card">
+				<img src="./picture/computer.png" style="height: 150px; width: 200px;" alt="Computer Club">
+				<h2 class="title">Computer Club</h2>
+				<a class="link" href="https://www.facebook.com/uiuccl/">Visit Computer Club</a>
+			</div>
+
+			<div class="card">
+				<img src="./picture/Sports.jpg" style="height: 150px; width: 200px;" alt="Sports Club">
+				<h2 class="title">Sports Club</h2>
+				<a class="link" href="https://www.facebook.com/SCUIU/">Visit Sports Club</a>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
