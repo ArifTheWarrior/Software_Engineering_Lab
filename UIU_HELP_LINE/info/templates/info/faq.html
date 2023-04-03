@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'info/main.css '%}">
+</head>
+<body>
+    <!-- <h1 style="text-align: center;">FAQ Page</h1> -->
+    <header>
+        <p><img src="picture/United_International_University_Monogram.svg.png" width="50px" height="50px"></p>
+            <p><h1 id="h1">United International University</h1></p>
+        <div class="f1">
+		<h1>Frequently Asked Questions</h1>
+        </div>
+	</header>
+	<main>
+        {% csrf_token %}
+
+		<!-- FAQ section goes here -->
+        
+            <div class="q1">
+            <!-- extra -->
+            <div class="question">
+                <h2>How do I apply to the university?</h2>
+                <div class="answer">
+                    <p>We can apply through the website of the university directly and submit all the required documents or send them by post.</p>
+                </div>
+            </div>
+
+            <div class="question">
+                <h2>What are the admission requirements?</h2>
+                <div class="answer">
+                    <p>A minimum GPA of 2.5/2nd division/equivalent grade in SSC and HSC or equivalent public examinations. Students with GPA 2.00 in any examination either SSC or HSC, however, must have a minimum GPA of 6.00 totalling the GPA of both the examinations.</p>
+                </div>
+            </div>
+
+            <div class="question">
+                <h2>How much is tuition?</h2>
+                <div class="answer">
+                    <p><a href="https://www.uiu.ac.bd/admission/tuition-fees-payment-policies/tuition-fees-waiver/"> click</a></p>
+                </div>
+            </div>
+            <div class="question">
+                <h2>What is the academic calendar?</h2>
+                <div class="answer">
+                    <p>An academic term is a portion of an academic year, the time during which an educational institution holds classes.
+                        <a href="https://www.uiu.ac.bd/academics/calendar/">Click here</a>
+                    </p>
+                </div>
+            </div>
+            <div class="question">
+                <h2>How do I apply to the university?</h2>
+                <div class="answer">
+                    <p>We can apply through the website of the university directly and submit all the required documents or send them by post.</p>
+                </div>
+            </div>
+            <div class="question">
+                <h2>How do I apply to the university?</h2>
+                <div class="answer">
+                    <p>We can apply through the website of the university directly and submit all the required documents or send them by post.</p>
+                </div>
+            </div>
+            <!-- More questions and answers go here -->
+        
+	</main>
+    </div>
+    <div class="foot">
+
+    </div>
+    <script>
+        const questions = document.querySelectorAll('.question');
+
+questions.forEach(question => {
+	const answer = question.querySelector('.answer');
+	question.addEventListener('click', () => {
+		answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+	});
+});
+    </script>
+
+</body>
+</html>

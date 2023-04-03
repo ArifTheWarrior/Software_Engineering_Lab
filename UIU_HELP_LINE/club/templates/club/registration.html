@@ -1,0 +1,158 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'club/main.css' %}">
+</head>
+
+<body>
+    <div class="div1">
+        <div class="div-top">
+
+        </div>
+
+
+        <!-- <div class="div-p">
+
+            <p class="pp2"><b><span class="s1">UIU</span></b> <span class="s2"> Help Line</span></p>
+
+        </div> -->
+        <div class="reg_div2">
+            <p id="reg_sign_up_txt">Sign Up</p>
+            <article id="reg_article">It's quick and easy.</article>
+            <hr style="margin-top: 8px;">
+            <form action="/club/store_db/" method="post">
+                {% csrf_token %}
+                <div class="reg_left">
+                    <!-- <fieldset>
+                        <legend >Fill Up Sincerly:</legend> 
+                    </fieldset> -->
+                    <table class="tbl1">
+                        <tr>
+                            <td class="dsgn1">Name:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="reg_dsgn2" id="name"></td>
+                        </tr>
+                        <tr>
+                            <td class="dsgn1">University Email</td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" class="reg_dsgn2" id="university_mail"></td>
+                        </tr>
+                        <tr>
+                            <td class="dsgn1">Departmemt:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="reg_dsgn2" id="department"></td>
+                        </tr>
+                        <tr>
+                            <td class="dsgn1">Student ID:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="reg_dsgn2" id="student_id"></td>
+                        </tr>
+                        <tr>
+                            <td class="dsgn1">Password:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" class="reg_dsgn2"id="password"></td>
+                        </tr>
+
+                    </table>
+
+                    <!-- <p id="p1">Already have an Account? <button type="submit" id="sign-up"><a
+                            href="signin.html">Sign in</a></a></button></p> -->
+                </div>
+                <!-- <div style="clear:both"></div> -->
+
+                <div class="reg_right">
+
+                    <table class="tl1">
+                        <tr>
+                            <td class="dsgn1">Division:<br></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="reg_dsgn2" id="division"></td>
+                            <!-- <select name="city" id="city" class="city-section">
+                                <option value="">Select Your City</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Chittagong">Chittagong</option>
+                            </select> -->
+                        </tr>
+                        <tr>
+                            <td class="dsgn1">District</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="reg_dsgn2" id="district"></td>
+                            <!-- <select name="city" id="city" class="city-section">
+                                <option value="">Select Your City</option>
+                                <option value="Sylhet">Sylhet</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Chittagong">Chittagong</option>
+                            </select> -->
+                        </tr>
+                        <tr>
+                            <td class="dsgn1">Post-Code:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="reg_dsgn2" id="post_code"></td>
+                        </tr>
+
+                        <tr>
+                            <td class="dsgn1">Phone Number:</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" class="reg_dsgn2" id="phone_number"></td>
+                        </tr>
+                        <tr>
+                            <td class="dsgn1">N-ID Card (Optional)</td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" class="reg_dsgn2" id="nid_card"></td>
+                        </tr>
+
+                    </table>
+
+                </div> 
+                
+                <!-- test1 strat -->
+                <div class="d1">
+                  <input type="checkbox" id="checkbox">
+                <label>acept turms and conditions</label>
+                <article>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS
+                    notifications from us and can opt out at any time.</article>
+                <div class="sign_up-sections">
+                    <button type="submit" id="sign-up">SignUp</button>
+
+                </div>
+                </div>
+
+                <!-- test1 end -->
+                    
+                
+            </form>
+
+
+        </div>
+
+    </div>
+
+    <div class="div-footer">
+        <p id="p2"> &copy; 2023 UIU Help Line </p>
+        <p id="p3">Find us on <a href="#" id="a1">f</a> </p>
+
+    </div>
+
+
+
+</body>
+
+</html>

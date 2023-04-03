@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'community/main.css' %}">
+</head>
+
+<body>
+  <div class="div-top">
+
+    <div class="dg1">
+      <sup class="s1">Community</sup><sub class="s2">CISCO</sub>
+    </div>
+    <div class="dg2">
+      <a href="#" class="btn1">Notification</a>
+    </div>
+    <div class="dg3">
+      <input class="int" type="search" placeholder="Search" name="n">
+    </div>
+
+  </div>
+  <div class="div1">
+    <form action="submit.php" method="post">
+      <!-- <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required> -->
+
+      <label for="content" style="color: aliceblue; font-size: 30px; margin-left: 50px;">Create a Post</label>
+      <textarea class="text-area-section" id="content" name="content" required></textarea>
+      <div>
+        <label for="media-upload" class="file-upload">Attach photo/Video</label>
+        <input id="media-upload" type="file" name="media">
+      </div>
+      <!-- <input type="submit" id="post-button value="> -->
+      <div class="div2">
+      <input type="submit" id="post-button">
+    </div>
+   
+    </form>
+    <!-- <div> -->
+      <!-- <form action="/submit-post" method="post" enctype="multipart/form-data">
+        <input type="file" name="media">
+      </form> -->
+    <!-- </div> -->
+  </div>
+  <script>
+    const fileUpload = document.getElementById('media-upload');
+    const customUpload = document.querySelector('.custom-file-upload');
+
+    customUpload.addEventListener('click', () => {
+      fileUpload.click();
+    });
+  </script>
+</body>
+
+</html>

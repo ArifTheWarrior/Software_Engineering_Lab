@@ -1,0 +1,322 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.body1 {
+    background-color: rgb(83, 81, 81);
+     height: 1000dvh; 
+    
+    width: 206dvh;
+    border-radius: 5Px;
+    border-color: orangered;
+    border-style: dashed;
+    /* height: 800px; */
+    /* width: 900px; */
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* original folders */
+
+/* .topnav {
+    overflow: hidden;
+    background-color: orangered;
+    border: solid orangered;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+
+/* .topnav a {
+     float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-left: 70px;
+} */
+
+
+
+
+
+/* test codes start */
+
+.t1{
+    height: 50px;
+    width: 60%;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 70px;
+}
+.t1 .a1{
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Arial, Helvetica, sans-serif';
+    padding: 10px 20px;
+    color: white;
+}
+.t1 .a1:hover{
+    background-color: white;
+    color: black;
+}
+/* .a1{
+    margin-top: 20px;
+} */
+.i1{
+    
+    width: 200px;
+    height: 30px;
+    background: white;
+    border: 1px solid orangered;
+    margin-top: 5px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-right: none;
+    float: left;
+    
+
+}
+.b1{
+    
+    height: 33px;
+    width: 60px;
+     border: 2px solid rgb(140, 137, 137);
+    background-color: rgb(140, 137, 137);
+    margin-top: 5px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+#hh3{
+    font-size: 46px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 30px;
+    margin-top: -30px;
+}
+ul{
+    float: left;
+}
+ul li{
+    list-style: none;
+    margin-top: 25px;
+    font-size: 15px;
+    
+}
+ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(242, 104, 53);
+    border-radius: 10px;
+    color: black;
+}
+
+
+
+
+
+/* test codes end */
+
+
+
+
+
+
+
+.topnav .nav-saction-profile {
+    position: absolute;
+    color: blue;
+    border-color: aqua;
+    display: block;
+    border-style: dashed;
+    margin-top: 30px;
+    margin-left: 1100px;
+    height: 90px;
+    width: 100px;
+    /* float: right; */
+    padding-top: 8px;
+    padding-bottom: 5px;
+    /* margin-right: 10px; */
+    /* margin-bottom: 0px; */
+
+}
+
+.topnav .nav-saction-profile .circle {
+    color: aqua;
+    border-color: chartreuse;
+    border-style: dashed;
+    height: 50px;
+    width: 60px;
+    border-radius: 10px;
+    margin-left: 15px;
+    display: inline-block;
+    align-content: center;
+    /* background-color: blue; */
+    background-image: url("01.PNG");
+    /* background-image: url('img_girl.jpg'); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.topnav .nav-saction-profile #user-name {
+    color: blue;
+    text-align: center;
+    border-color: brown;
+    border-style: dashed;
+    margin-top: 2px;
+}
+
+
+
+/* .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+} */
+
+
+.topnav .search-container {
+    float: left;
+    margin-left: 710px;
+    margin-top: 110px;
+    padding: 8px 10px;
+    /* search box */
+    background-color: transparent;  
+}
+
+/* .topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: 140px;
+    font-size: 17px;
+    border: none;
+    display: inline-block;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.topnav .search-container button {
+     float: right; 
+    display: inline-block;
+    padding: 6px 10px;
+    margin-top: 40px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+} */
+
+/* .topnav .search-container button:hover {
+    background: #ccc;
+} */
+
+@media screen and (max-width: 600px) {
+
+    .topnav .search-container {
+        float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: inline-block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    /* #message{
+    font-size:100px;
+  } */
+    .topnav input[type=text] {
+        display: inline-block;
+        border: 1px solid #ccc;
+    }
+}
+
+#varsity-name-style {
+    color: whitesmoke;
+    font-size: 50px;
+    margin-left: 20px;
+
+
+}
+
+.left-section{
+    height: 400px;
+    width: 500px;
+    background-color: yellowgreen;
+    /* background-image: url('../picture/computer-2982270__480.jpg'); */
+    border-style: dashed;
+    border-color: brown;
+    display: inline-block;
+    /* float: left; */
+}
+.right-section{
+    height: 400px;
+    width: 400px;
+    background-color: palegreen;
+    border-style: dashed;
+    border-color: brown;
+    display: inline-block;
+    /* float: right; */
+    margin-left: 350px;
+    
+    position: absolute;
+}
+
+
+/* .left-section2{
+    height: 400px;
+    width: 400px;
+    background-color: palegreen;
+    border-style: dashed;
+    border-color: brown;
+    display:inline-flexbox
+     float: left; 
+    /* margin-left: 350px; 
+    position: absolute;
+}*/
+    
+
+/* 
+.right-section2{
+    height: 400px;
+    width: 400px;
+    background-color: palegreen;
+    border-style: dashed;
+    border-color: brown;
+    display: inline-block;
+    float: right;
+    /* margin-left: 750px; */
+    
+    /* position: absolute; */
+/* } */
+
+
+
+.horz-section{
+    
+    
+    height: 210px;
+    width: 100%;
+    background-color: rgb(247, 88, 31);
+    border-style: dashed;
+    border-color: brown;
+    display: block;
+} 

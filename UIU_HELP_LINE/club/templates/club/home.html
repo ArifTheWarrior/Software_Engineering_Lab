@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'index_css/main.css' %}">
+
+</head>
+<body>
+    <div class="body1">
+        <div class="topnav">
+            <!-- <a id="varsity-name-style" href="#home">United International University</a> -->
+            <div class="t1">
+            <h3 id="hh3">United International University</h3>
+            
+            <a class="a1" href="#about">Message</a>
+            <a class="a1" href="#contact">Notifications</a>
+            <a class="a1" href="{% url 'club-community' %}">Communities</a>
+            <a class="a1" href="{% url 'info-faq' %}">FAQ</a>
+            <a class="a1" href="{% url 'club-login' %}">Login</a>
+            <a class="a1" href="{% url 'club-registration' %}">Register</a>
+        </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input class="i1" type="text" placeholder="Search.." name="search">
+                    <button class="b1" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <div class="nav-saction-profile">
+                 <div class="circle">
+                    <img src="{% static 'images/001.png' %}" alt="Arif's Photo" style="float:left;width:42px;height:42px;">
+                </div> 
+
+               
+
+                <form action="login.html">
+                    <button>user</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="horz-section"></div>
+
+
+        <div class="left-section">
+
+            <div class="left-sub-section">
+                <a id="varsity-name-style" href="#home">Admission</a><br>
+                <div class="btn">
+                 <ul>
+                    <li><a class="dg1" href="#about">shuttle</a><br></li>
+                    <li><a class="dg1" href="#">Cub/Form/</a><br></li>
+
+                    <li><a class="dg1" href="https://www.uiu.ac.bd/academics/calendar/">academic calender</a><br></li>
+                    <li><a class="dg1" href="#">FAQ</a><br></li>
+                    <li><a class="dg1" href="#">DISTANCE FROM UIU</a><br></li>
+                </ul>
+            </div>
+            </div>
+
+        </div>
+        <div class="right-section">
+            <h1>Calender</h1>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
